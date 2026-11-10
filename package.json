@@ -1,6 +1,6 @@
 {
   "name": "dsh-mcp-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Settings → MCP page for DeepSeek Harness: view the MCP servers DSH already configured and add your own MCP servers, which connect and register tools immediately without restarting DSH.",
   "type": "module",
   "main": "index.js",
