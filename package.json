@@ -1,0 +1,62 @@
+{
+  "name": "dsh-mcp-config",
+  "version": "0.1.0",
+  "description": "Settings → MCP page for DeepSeek Harness: view the MCP servers DSH already configured and add your own MCP servers, which connect and register tools immediately without restarting DSH.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "LICENSE",
+    "README.md",
+    "test/"
+  ],
+  "icon": "./icon.svg",
+  "author": "MYiYang <1791500400@qq.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MYiYang/dsh-mcp-config.git"
+  },
+  "homepage": "https://github.com/MYiYang/dsh-mcp-config#readme",
+  "bugs": {
+    "url": "https://github.com/MYiYang/dsh-mcp-config/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "deepseek",
+    "mcp",
+    "model-context-protocol",
+    "settings",
+    "plugin",
+    "cordis"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/host.test.js test/identity.test.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

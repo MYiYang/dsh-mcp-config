@@ -1,0 +1,14 @@
+# dsh-mcp-config bundle patch.
+#
+# Mounts the Host half: one trust-fenced JSON route family
+# `/dsh-mcp-config/api/*` that
+#   - reads the MCP rows DSH's own loader already configured
+#     (`@deepseek-ai/dsh-mcp-client`) for the read-only list, and
+#   - mounts the same official client as a child plugin for each custom server,
+#     so adding a server connects and registers tools immediately.
+#
+# The package's `dsh.client` declaration makes the Web carrier serve client.js
+# (the Settings → MCP page), so the patch needs no extra row for the UI.
+- insert:
+    - id: dsh-mcp-config
+      name: 'dsh-mcp-config'

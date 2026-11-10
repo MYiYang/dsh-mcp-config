@@ -1,0 +1,20 @@
+# 依赖
+node_modules/
+pnpm-lock.yaml
+
+# 打包产物
+*.tgz
+*.tar.gz
+
+# 本地分析稿 / 真机截图：只在本地留档，不随仓库与发布包外流
+ANALYSIS-*.md
+screenshots/
+preview/
+*.local.*
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

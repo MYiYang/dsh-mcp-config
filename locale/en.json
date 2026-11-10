@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "MCP servers",
+    "description": "Adds a Settings → MCP page that lists the MCP servers DSH already configured and lets you add your own MCP servers (stdio or HTTP), which connect and register tools immediately without restarting DSH."
+  }
+}

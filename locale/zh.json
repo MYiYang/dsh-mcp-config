@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "MCP 服务",
+    "description": "在设置里增加「MCP」页：展示 DSH 已配置的 MCP 服务，并可手动添加自己的 MCP 服务（stdio 或 HTTP），保存后立即连接并注册工具，无需重启 DSH。"
+  }
+}
